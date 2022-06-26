@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+.judul {
+    color: whitesmoke;
+    text-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.699);
+}
+
+.quiz-container {
+    background-color: #fff;
+    width: 600px;
+    border-radius: 2%;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.445);
+   max-width: 100%;
+   overflow: hidden;
+}
+
+.quiz-container h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.7rem;
+}
+
+.container-header {
+    padding: 2rem;
+}
+
+.container-header ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-header ul li {
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.container-header ul li label {
+    cursor: pointer;
+}
+
+.container-header ul li input {
+    cursor: pointer;
+}
+
+button {
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    width: 100%;
+    color: white;
+    display: block;
+    padding: 1.4rem;
+    font-size: 1.3rem;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: #7f5a83be;
+    background-image: linear-gradient(315deg, #7f5a83a5 0%, #0d324d93 74%);
+}
+
+#variasi {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+
+#variasi .bunga {
+    position: absolute;
+}
+
+#variasi .b1 {
+    left: 10%;
+    animation: animasi1 1.5s linear infinite;
+}
+
+#variasi .b2 {
+    left: 30%;
+    animation: animasi2 1.5s linear infinite;
+}
+
+#variasi .b3 {
+    left: 50%;
+    animation: animasi1 1.5s linear infinite;
+}
+
+#variasi .b4 {
+    left: 70%;
+    animation: animasi3 1.5s linear infinite;
+}
+
+#variasi .b5 {
+    left: 90%;
+    animation: animasi1 2s linear infinite;
+}
+
+
+@keyframes animasi1 {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: 25%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    75% {
+        top: 75%;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+@keyframes animasi2 {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: 35%;
+    }
+
+    50% {
+        top: 60%
+    }
+
+    75% {
+        top: 85%;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+@keyframes animasi3 {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: 20%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    75% {
+        top: 80%;
+    }
+
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
